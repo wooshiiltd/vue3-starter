@@ -3,11 +3,10 @@ import App from './App.vue';
 import './assets/styles/main.scss';
 import router from './router';
 import i18n from './i18n';
-import $store from './store';
+import store from './store';
 
-const app = createApp(App)
+createApp(App)
     .use(router)
-    .use(i18n);
-
-app.config.globalProperties.$store = $store;
-app.mount('#app');
+    .use(store)
+    .use(i18n)
+    .mount('#app');

@@ -25,7 +25,7 @@ export default defineComponent({
 
     methods: {
         async switchLocale() {
-            await setLocale(availableLocales.filter(locale => locale !== this.$i18n.locale)[0], this.$i18n);
+            await setLocale(availableLocales.filter(locale => locale !== this.$i18n.locale)[0]);
         }
     }
 });

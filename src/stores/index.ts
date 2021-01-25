@@ -1,4 +1,5 @@
 import { reactive } from 'vue';
+import { Store } from '@/store';
 
 const state = reactive({
     message: 'Hello!'
@@ -14,4 +15,4 @@ export default {
             state.message = value;
         }
     }
-};
+} as Store;

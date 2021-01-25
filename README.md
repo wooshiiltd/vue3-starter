@@ -70,3 +70,8 @@ To add a new locale, all you have to do is create a file in the `locales` folder
 
 Aliases that resolved by the testing suites, typescript and bundler
  - `@` - points to the `src` directory e.g.: `import $store from '@/store`
+
+## Store
+Store is a simple [reactive store pattern](https://vuejs.org/v2/guide/state-management.html#Simple-State-Management-from-Scratch).
+To create a store module, place a ts module at any depth in the `./stores` folder with the default export implementing the `Store` type found in the `store.ts`
+The store is available everywhere in on vue under the `$store` property

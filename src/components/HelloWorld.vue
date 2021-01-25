@@ -1,11 +1,17 @@
 <template>
-    hello world
+    {{ msg }}
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-    name: 'HelloWorld'
+    name: 'HelloWorld',
+    props: {
+        msg: {
+            type: String,
+            default: 'hello world'
+        }
+    }
 });
 </script>

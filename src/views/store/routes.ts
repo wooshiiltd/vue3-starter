@@ -2,7 +2,7 @@ import { RouteRecordRaw } from 'vue-router';
 
 export default [
     {
-        path: '/store',
+        path: '/stores',
         name: 'store.index',
         component: import('./Index.vue')
     }
