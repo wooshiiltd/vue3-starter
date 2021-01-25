@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "jsx": "preserve",
+        "sourceMap": true,
+        "esModuleInterop": true,
+        "lib": [
+            "esnext",
+            "dom"
+        ],
+        "types": [
+            "node",
+            "jest",
+            "vite/client",
+            "@wdio/sync",
+            "@wdio/jasmine-framework",
+            "@wdio/selenium-standalone-service"
+        ],
+        "plugins": [
+            {
+                "name": "@vuedx/typescript-plugin-vue"
+            }
+        ],
+        "baseUrl": "./",
+        "paths": {
+            "@/*": ["src/*"],
+            "/@/*": ["src/*"]
+        }
+    },
+    "include": [
+        "src/**/*.ts",
+        "src/**/*.d.ts",
+        "src/**/*.tsx",
+        "src/**/*.vue"
+    ]
+}
