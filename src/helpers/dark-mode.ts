@@ -1,6 +1,6 @@
 import { onBeforeMount } from 'vue';
 
-const useTailwindDarkMode: () => {toggleDarkMode: () => void} = () => {
+const useTailwindDarkMode: () => (() => void) = () => {
     const htmlPage = document.querySelector('html');
     if (!(htmlPage instanceof HTMLHtmlElement)) {
         throw new Error('No root html element found');
@@ -20,7 +20,7 @@ const useTailwindDarkMode: () => {toggleDarkMode: () => void} = () => {
     });
 
     // add remove to respect os setting
-    const toggleDarkMode = () => {
+    return () => {
         // Whenever the user explicitly chooses light mode
         if (htmlPage.classList.contains('dark')) {
             htmlPage.classList.remove('dark');
@@ -31,7 +31,6 @@ const useTailwindDarkMode: () => {toggleDarkMode: () => void} = () => {
             htmlPage.classList.add('dark');
         }
     };
-    return { toggleDarkMode };
 };
 
 export default useTailwindDarkMode;

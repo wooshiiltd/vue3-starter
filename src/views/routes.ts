@@ -1,6 +1,6 @@
 import { RouteRecordRaw } from 'vue-router';
 import Index from './Index.vue';
-import { Meta } from '../router';
+import { Meta } from '@/router';
 
 export default [
     {

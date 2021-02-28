@@ -16,8 +16,8 @@
             "node",
             "jest",
             "vite/client",
-            "@wdio/sync",
-            "@wdio/jasmine-framework",
+            "webdriverio/async",
+            "@wdio/mocha-framework",
             "@wdio/selenium-standalone-service"
         ],
         "plugins": [

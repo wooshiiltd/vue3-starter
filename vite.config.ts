@@ -6,8 +6,11 @@ export default defineConfig({
     plugins: [
         vue()
     ],
-    alias: {
-        '@': path.resolve(__dirname, '/src'),
-        'vue-i18n': 'vue-i18n/dist/vue-i18n.esm-bundler.js'
-    }
+    resolve: {
+        alias: {
+            '@': path.resolve(__dirname, '/src'),
+            'vue-i18n': 'vue-i18n/dist/vue-i18n.esm-bundler.js'
+        }
+    },
+    base: process.env.VITE_APP_URL
 });

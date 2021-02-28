@@ -1,4 +1,4 @@
-import { LocaleExport } from '../i18n';
+import { LocaleExport } from '@/i18n';
 
 const localeCode = 'en';
 

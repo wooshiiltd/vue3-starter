@@ -5,8 +5,8 @@ import {
     RouteRecordRaw,
     RouterScrollBehavior
 } from 'vue-router';
-const routeModules = import.meta.globEager('./views/**/routes.ts');
 
+const routeModules = import.meta.globEager('./views/**/routes.ts');
 const routes = Object.keys(routeModules)
     .map(modulePath => routeModules[modulePath].default)
     .flat(1) as RouteRecordRaw[];
@@ -39,7 +39,7 @@ const scrollBehavior: RouterScrollBehavior = (to, _from, savedPosition) => {
 };
 
 const router = createRouter({
-    history: createWebHistory(process.env.VUE_APP_URL),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes,
     scrollBehavior
 });

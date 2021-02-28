@@ -49,7 +49,11 @@ module.exports = {
         'semi': 'off',
         'indent': 'off',
         'no-unused-expressions': 'off',
-        'space-before-function-paren': ['error', 'never'],
+        'space-before-function-paren': ['warn', {
+            'anonymous': 'never',
+            'named': 'never',
+            'asyncArrow': 'always'
+        }],
         'no-trailing-spaces': 'warn',
         'no-any': 'off',
         'no-prototype-builtins': 'off',

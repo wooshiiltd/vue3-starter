@@ -5,11 +5,14 @@ The stack:
  - typescript
  - vite
  - scss + tailwind + postcss /w autoprefixer
- - jest + webdriverIO /w selinium
+ - jest (+snapshot testing) + webdriverIO /w selinium
  - eslint
  - i18n
  - router
 
+requirements:
+ - java
+ - node
 
 ## Project setup
 ```
