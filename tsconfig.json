@@ -35,6 +35,7 @@
         "src/**/*.tsx",
         "src/**/*.vue",
         "jest.config.ts",
-        "vite.config.ts"
+        "vite.config.ts",
+        "wdio.conf.ts"
     ]
 }

@@ -10,9 +10,9 @@ then
 fi
 
 # add remote if doesn't already exists
-if [ `git remote -v | grep 'original-tempate https://github.com/wooshiiltd/web-template.git'` ]
+if [ `git remote -v | grep 'original-tempate https://github.com/nandi95/vue3-starter.git'` ]
 then
-  git remote add original-tempate https://github.com/wooshiiltd/web-template.git
+  git remote add original-tempate https://github.com/nandi95/vue3-starter.git
 fi
 
 # get remote

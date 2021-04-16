@@ -4,8 +4,8 @@ The stack:
  - vue
  - typescript
  - vite
- - scss + tailwind + postcss /w autoprefixer
- - jest (+snapshot testing) + webdriverIO /w selinium
+ - scss + tailwind (jit)
+ - jest + vtu + snapshot testing + webdriverIO /w selinium
  - eslint
  - i18n
  - router

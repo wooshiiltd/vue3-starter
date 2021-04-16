@@ -1,5 +1,5 @@
 import { reactive } from 'vue';
-import { Store } from '@/store';
+import type { Store } from '@/store';
 
 const state = reactive({
     message: 'Hello!'

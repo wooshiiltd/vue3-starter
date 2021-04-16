@@ -3,12 +3,13 @@ import SecurePage from '../pageobjects/secure.page';
 
 describe('My Login application', () => {
     it('should login with valid credentials', async () => {
-        await LoginPage.open();
+        // await LoginPage.open();
+        await browser.url('https://the-internet.herokuapp.com/login');
 
-        await LoginPage.login('tomsmith', 'SuperSecretPassword!');
-        await expect(SecurePage.flashAlert).toBeExisting();
-        await expect(SecurePage.flashAlert).toHaveTextContaining(
-            'You logged into a secure area!');
+        // await LoginPage.login('tomsmith', 'SuperSecretPassword!');
+        // await expect(SecurePage.flashAlert).toBeExisting();
+        // await expect(SecurePage.flashAlert).toHaveTextContaining(
+        //     'You logged into a secure area!');
     });
 });
 

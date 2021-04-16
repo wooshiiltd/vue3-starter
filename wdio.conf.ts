@@ -1,5 +1,4 @@
-exports.config = {
-    //
+export default {
     // ====================
     // Runner Configuration
     // ====================
@@ -138,7 +137,7 @@ exports.config = {
     mochaOpts: {
         ui: 'bdd',
         timeout: 60000
-    },
+    }
     //
     // =====
     // Hooks
@@ -269,4 +268,4 @@ exports.config = {
     */
     //onReload: function(oldSessionId, newSessionId) {
     //}
-}
+};

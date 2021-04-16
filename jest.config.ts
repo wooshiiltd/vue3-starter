@@ -18,9 +18,7 @@ export default {
     },
     moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'ts', 'tsx', 'node'],
     transformIgnorePatterns: ['/node_modules/'],
-    snapshotSerializers: [
-        'jest-serializer-vue'
-    ],
+    snapshotSerializers: ['jest-serializer-vue'],
     globals: {
         'vue-jest': {
             // https://github.com/vuejs/vue-jest#global-jest-options
@@ -32,4 +30,3 @@ export default {
         }
     }
 };
-// todo create snapshot test example

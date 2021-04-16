@@ -1,9 +1,22 @@
+:root {
+    --color-brand-50: 245, 243, 255;
+    --color-brand-100: 237, 233, 254;
+    --color-brand-200: 221, 214, 254;
+    --color-brand-300: 196, 181, 253;
+    --color-brand-400: 167, 139, 250;
+    --color-brand-500: 139, 92, 246;
+    --color-brand-600: 124, 58, 237;
+    --color-brand-700: 109, 40, 217;
+    --color-brand-800: 91, 33, 182;
+    --color-brand-900: 76, 29, 149;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
     body {
-        @apply bg-gray-50 dark:bg-gray-800 dark:text-gray-100 h-full transition;
+        @apply bg-gray-50 dark:bg-gray-700 dark:text-gray-100 h-full transition;
     }
 }

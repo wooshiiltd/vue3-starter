@@ -1,10 +1,5 @@
-import {
-    createRouter,
-    createWebHistory,
-    RouteLocation,
-    RouteRecordRaw,
-    RouterScrollBehavior
-} from 'vue-router';
+import type { RouteLocation, RouteRecordRaw, RouterScrollBehavior } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 
 const routeModules = import.meta.globEager('./views/**/routes.ts');
 const routes = Object.keys(routeModules)
@@ -26,7 +21,7 @@ const scrollBehavior: RouterScrollBehavior = (to, _from, savedPosition) => {
         return savedPosition;
     }
 
-    const position: {[k: string]: number|string} = {
+    const position: Record<string, number|string> = {
         top: 0,
         behavior: 'smooth'
     };
@@ -87,10 +82,12 @@ router.beforeEach(to => {
 /**
  * The known possible meta values.
  */
-export interface Meta {
-    needsAuth?: boolean;
-    layout?: string;
-    [key: string]: unknown;
+declare module 'vue-router' {
+    interface RouteMeta {
+        needsAuth?: boolean;
+        layout?: string;
+        [key: string]: unknown;
+    }
 }
 
 export default router;

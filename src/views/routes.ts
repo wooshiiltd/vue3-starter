@@ -1,6 +1,5 @@
-import { RouteRecordRaw } from 'vue-router';
+import type { RouteRecordRaw } from 'vue-router';
 import Index from './Index.vue';
-import { Meta } from '@/router';
 
 export default [
     {
@@ -9,6 +8,6 @@ export default [
         component: Index,
         meta: {
             needsAuth: false
-        } as Meta
+        }
     }
 ] as RouteRecordRaw[];

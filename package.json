@@ -7,7 +7,7 @@
         "lint": "eslint . --fix --ext .ts",
         "serve-local-build": "npm run build && http-server ./dist -g -o",
         "test:unit": "jest",
-        "test:e2e": "wdio run wdio.conf.js"
+        "test:e2e": "wdio run wdio.conf.ts"
     },
     "dependencies": {
         "vue": "^3.0.5",
@@ -29,7 +29,7 @@
         "@wdio/mocha-framework": "^7.0.7",
         "@wdio/selenium-standalone-service": "^7.0.7",
         "@wdio/spec-reporter": "^7.0.7",
-        "autoprefixer": "^10.2.3",
+        "autoprefixer": "^10.2.5",
         "eslint": "^7.16.0",
         "eslint-plugin-import": "^2.22.1",
         "eslint-plugin-jest": "^24.1.3",
@@ -40,9 +40,9 @@
         "jest-fetch-mock": "^3.0.3",
         "jest-serializer-vue": "^2.0.2",
         "jest-transform-stub": "^2.0.0",
-        "postcss": "^8.2.4",
-        "sass": "^1.32.5",
-        "tailwindcss": "^2.0.2",
+        "postcss": "^8.2.9",
+        "sass": "^1.32.8",
+        "tailwindcss": "^2.1.1",
         "ts-jest": "^26.4.4",
         "ts-node": "^9.1.1",
         "tslib": "^2.0.1",
